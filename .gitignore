@@ -1,0 +1,15 @@
+npm-debug.log
+.DS_Store
+
+*.js.map
+app/**/*.js
+e2e/**/*.js
+e2e/reports/
+hooks/
+lib/
+node_modules/
+platforms/
+tmp/
+typings/
+report/
+test-results.xml
