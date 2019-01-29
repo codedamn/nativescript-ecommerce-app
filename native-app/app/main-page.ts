@@ -9,6 +9,8 @@ import { Page } from "tns-core-modules/ui/page";
 import { Button } from "tns-core-modules/ui/button";
 import { HelloWorldModel } from "./main-view-model";
 
+import { request } from 'http'
+
 // Event handler for Page "navigatingTo" event attached in main-page.xml
 export function navigatingTo(args: EventData) {
     /*
@@ -31,10 +33,20 @@ export function navigatingTo(args: EventData) {
     page.bindingContext = new HelloWorldModel();
 }
 
-export function submit(args: EventData) {
+export async function submit(args: EventData) {
+	//alert('eya')
 	const button = <Button>args.object
 
 	const page = button.page
+
+	debugger
+
+	const r = await request({
+		url: "https://7fac31de.ngrok.io",
+		method: "GET"
+	})
+
+	console.dir(r.content.toString())
 
 	// check if the user is correct
 	

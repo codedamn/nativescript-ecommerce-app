@@ -2,8 +2,8 @@ npm-debug.log
 .DS_Store
 
 *.js.map
-app/**/*.js
-e2e/**/*.js
+native-app/app/**/*.js
+native-app/e2e/**/*.js
 e2e/reports/
 hooks/
 lib/

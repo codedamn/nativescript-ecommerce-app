@@ -19,7 +19,7 @@
 
 			</StackLayout>
 
-			<Button text="Login" tap="submit()" class="btn btn-primary"></Button>
+			<Button text="Login" tap="submit" class="btn btn-primary"></Button>
 		</StackLayout>
 	</FlexboxLayout>
 </Page>
