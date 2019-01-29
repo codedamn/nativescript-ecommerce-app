@@ -1,0 +1,32 @@
+.page {
+	align-items: center;
+}
+
+.form {
+	width: 100%;
+	margin-left: 30;
+	margin-right: 30;
+}
+
+.header {
+	font-size: 25;
+	text-align: center;
+	color: red;
+	font-weight: 600;
+	margin-bottom: 70;
+}
+
+.input-field {
+	margin-bottom: 20
+}
+
+.input {
+	font-size: 20;
+}
+
+.btn-primary {
+	height: 50;
+	background-color: red;
+	font-size: 20;
+	font-weight: 600;
+}

@@ -6,6 +6,7 @@ logic, and to set up your page’s data binding.
 
 import { EventData } from "tns-core-modules/data/observable";
 import { Page } from "tns-core-modules/ui/page";
+import { Button } from "tns-core-modules/ui/button";
 import { HelloWorldModel } from "./main-view-model";
 
 // Event handler for Page "navigatingTo" event attached in main-page.xml
@@ -28,4 +29,13 @@ export function navigatingTo(args: EventData) {
     https://docs.nativescript.org/core-concepts/data-binding.
     */
     page.bindingContext = new HelloWorldModel();
+}
+
+export function submit(args: EventData) {
+	const button = <Button>args.object
+
+	const page = button.page
+
+	// check if the user is correct
+	
 }
